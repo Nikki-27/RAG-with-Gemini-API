@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+
+.header{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 15px;
+} 
+
+
+
+.text {
+    position: static;
+    top: 25%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 5em;
+    font-weight: 700;
+    color: #0c1190;
+    text-shadow: 1px 1px 1px #1642c0,
+        1px 2px 1px #1642c0,
+        1px 3px 1px #1642c0,
+        1px 4px 1px #1642c0,
+        1px 5px 1px #1642c0,
+        1px 6px 1px #1642c0,
+        1px 7px 1px #1642c0,
+        1px 8px 1px #1642c0,
+        1px 9px 1px #1642c0,
+        1px 10px 1px #1642c0,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.input-group{
+    margin-top: 15px;
+}
+
+#query{
+    background: transparent;
+    color: whitesmoke;
+    width: 50vw;
+    padding: 10px;
+}
+
+.card{
+    width: 45vw;
+    color: whitesmoke;
+    margin-top: 25px;
+    background: transparent;
+    left: 25%;
+}
+
+.card-body p span{
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid whitesmoke; /* The typwriter cursor */
+    white-space: nowrap;  /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: whitesmoke }
+  }
