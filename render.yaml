@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: Luke Skywalker
+    env: python:3.9
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    port: 8080
+    healthCheck:
+      http:
+        path: /
